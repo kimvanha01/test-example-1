@@ -1,27 +1,26 @@
-import React from 'react';
-
-function Main(props) {
+import React from 'react'
+import './index.scss'
+const MainLayout = ({ children }) => {
     return (
-        <div class="content">
-            <div class="header">
-                <img src="./assets/images/logoNCC 1.png" alt="logo" />
+        <div className="container">
+            <div className="sidebar">
+                <ul>
+                    <li>Home</li>
+                    <li>Service</li>
+                    <li>News</li>
+                    <li>Blog</li>
+                    <li>Contact</li>
+                </ul>
             </div>
-            <div class="intro">
-                <p class="title">
-                    Lorem ipsum dolor sit asmet?
-                </p>
-                <div class="description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique consequat placerat.
-                    Vestibulum auctor pellentesque sem, eu posuere erat hendrerit quis. Maecenas vel consequat
-                    turpis. Nam facilisis, ligula in mattis sodales, augue justo tristique nulla, sed lacinia ante
-                    eros ut mi. Morbi vitae diam augue. Aliquam vel mauris a nibh auctor commodo. Praesent et nisi
-                    eu justo eleifend convallis. Quisque suscipit maximus vestibulum. Phasellus congue mollis orci,
-                    sit amet luctus augue tristique eu. Donec vulputate odio neque, sed semper turpis pellentesque
-                    a.
-                </div>
+            <div className='content'>
+                {children}
             </div>
+            <footer className="footer">
+                <p>Copyright © 2021</p>
+            </footer>
+
         </div>
-    );
+    )
 }
 
-export default Main;
+export default MainLayout

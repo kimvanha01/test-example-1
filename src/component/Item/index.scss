@@ -1,0 +1,10 @@
+.content-card {
+    shape-outside: polygon(100% 0%, 100% 100%, 0% 100%);
+    width        : 128px;
+    height       : 128px;
+    float        : left;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+}

@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #191718;
+    color: #fff;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    height: 44px;
+    border-bottom: 1px solid rgb(92, 91, 91);
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.content {
+    width: 80%;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 20%;
+    border-top: 1px solid rgb(92, 91, 91);
+    width: 100%;
+    padding: 20px;
+}
